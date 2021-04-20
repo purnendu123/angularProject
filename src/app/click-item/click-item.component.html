@@ -1,0 +1,13 @@
+
+<div class="clkItem">
+    <div class="clickImage">
+        <div class="cross"><span (click)="cross()">X</span></div>
+       <div class="imgDiv"> 
+           <div *ngIf="firstItem" (click) = "previous()" class="button"><span><</span></div>
+           <img [src]="clickImg()" class="clickedimg">
+           <div *ngIf="lastItem" (click) = "next()" class="button"><span>></span></div>
+       </div>
+        <div class="title">{{title}}</div>
+        
+    </div>
+</div>

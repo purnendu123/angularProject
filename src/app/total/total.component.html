@@ -1,0 +1,23 @@
+<div class="totalPage">
+    <div class="inputDiv">
+        <div class="write"><span>Image Gallery</span></div>
+        <input class="input" #inp type="text" placeholder="search any images" (change) = inputChange(inp.value)>
+    </div>
+    <div class="lower" >
+        <div class ="loader" *ngIf='load'></div>
+       <div class="totalImg">
+        <div >
+            <div *ngIf= 'image.length' class="imageDiv">
+                <div class="image" *ngFor="let item of image; let i=index" (click) = "click(item , i)" [ngClass]='{"selectedClass":selectedIndex==i}'>
+                    
+                    <img [src]="urlValue(i)">
+                </div>
+            </div>
+        </div>
+       </div>
+        <div *ngIf= 'clickChecked' class="side">
+            <app-click-item></app-click-item>
+        </div>
+    </div>
+    
+</div>

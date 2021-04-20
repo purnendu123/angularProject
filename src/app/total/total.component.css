@@ -1,0 +1,136 @@
+.input{
+    width: 30%;
+    height: 25px;
+}
+
+.inputDiv{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    background-color: cadetblue;
+    justify-content: space-between;
+
+}
+.write{
+    color: crimson;
+    
+    font-size: 30px;
+}
+.image{
+    height: 170px !important;
+    width: 24%;
+    margin: 4px;
+    display: inline-flex;
+    /* flex-wrap: wrap; */
+    min-width: 180px;
+}
+img{
+    width: 100%;
+}
+body{
+    overflow: hidden;
+}
+.lower{
+    width: 100% !important;
+    display: flex;
+}
+.totalImg{
+    margin-top: 30px;
+    overflow: auto;
+    max-height: 580px;
+}
+.side{
+    margin-top: 55px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    background-color: black
+} 
+.selectedClass{
+    border: 2px solid black;
+}
+.image:hover{
+    opacity: 0.3;
+}
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+/* .imageDiv:hover{
+    background-color: thistle;
+} */
+ @media only screen and (max-width: 630px) {
+    .lower{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .side{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        background-color: black
+    } 
+    
+  } 
+  @media only screen and (max-width: 1125px) and (min-width: 1020px) {
+    .image{
+        width: 30% !important;
+    }
+} 
+@media only screen and (max-width: 1015px) and (min-width: 812px) {
+    .image{
+        width: 45% !important;
+    }
+} 
+@media only screen and (max-width: 826px) and (min-width: 630px) {
+    .image{
+        width: 90% !important;
+    }
+    
+    .side{
+        margin-top: 30px !important;
+    }
+} 
+@media only screen and (max-width: 826px){
+    .totalImg{
+        margin-top: 3px;
+    }
+}
+@media only screen and (max-width: 590px) and (min-width: 408px) {
+    .image{
+        width: 45% !important;
+    }
+} 
+@media only screen and (max-width: 406px) and (min-width: 320px) {
+   
+    .image{
+        height: 170px !important;
+        width: 30%;
+        margin: 4px;
+        display: inline-flex;
+        min-width: 100px;
+    }
+} 
